@@ -1,10 +1,15 @@
 import "./Navbar.sass"
+import Logo from "../../assets/logo.png"
 
 export default function Navbar(){
     return (
         <>
             <nav className="navbar">
-                <h1>oi</h1>
+                <ul>
+                    <li>Sobre</li>
+                    <li>Cardápio</li>
+                    <li>Contato</li>
+                </ul>
             </nav>
         </>
     )
