@@ -1,0 +1,39 @@
+.containerBroas
+  width: 100%
+  overflow: hidden
+  position: relative
+  display: flex
+  flex-direction: row
+  margin-top: 200px
+
+.carousel
+  display: flex
+  flex-direction: row
+  animation: slide 40s linear infinite
+  width: max-content
+
+.broa
+  width: 400px
+  object-fit: cover
+  margin-right: 16px
+  flex-shrink: 0
+  border-radius: 10px
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3))
+
+  &:hover
+    scale: 1.1
+
+// Animation for infinite scroll
+@keyframes slide
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(-50%)
+
+// Responsive adjustments for mobile
+@media (max-width: 640px)
+  .broa
+    width: 200px
+    height: 150px
+    margin-right: 8px
+    border-radius: 8px
