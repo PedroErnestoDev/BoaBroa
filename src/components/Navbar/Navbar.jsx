@@ -7,7 +7,7 @@ export default function Navbar(){
             <nav className="navbar">
                 <ul>
                     <li>Sobre</li>
-                    <li>Cardápio</li>
+                    <li>Catálogo</li>
                     <li>Contato</li>
                 </ul>
             </nav>

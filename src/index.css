@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   background-color: #F3D3B3;
 }
 
@@ -28,3 +29,4 @@ img {
   max-width: 100%;
   display: block;
 }
+

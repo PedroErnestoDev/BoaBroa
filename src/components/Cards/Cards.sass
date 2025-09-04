@@ -1,0 +1,39 @@
+.card
+    background-color: #FFF5E9
+    height: 429px
+    width: 413px
+    overflow: visible
+    position: relative
+    padding: 16px // para dar espaço interno
+    border-radius: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &:hover
+        scale: 1.01
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.card img
+    width: 515px
+    max-width: none
+    display: block
+    position: relative // desloca a imagem para a esquerda, ultrapassando o card
+    margin-bottom: 16px // espaço entre imagem e texto
+    filter: drop-shadow(10px 10px 10px gray)
+
+    &:hover
+        scale: 1.01
+
+.titulo
+    margin-top: -50px
+    color: #8C6A4A
+    font-size: 48px
+    width: 500px
+    display: flex
+    justify-content: center
+
+.descricao
+    color: #9A4B00
+    font-size: 20px
