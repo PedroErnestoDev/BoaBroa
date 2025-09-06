@@ -8,7 +8,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
-export default function Sobre() {
+export default function Sobre({id}) {
   const phoneNumber = "5519986125489";
   const textRef = useRef(null);
 
@@ -43,7 +43,7 @@ export default function Sobre() {
 
   return (
     <>
-      <div className="containerSobre">
+      <div className="containerSobre" id={id}>
         <img src={Logo} alt="Imagem logo boabroa" className="logoBoaBroa" />
         <div className="containerWords">
           <h1>Sobre nós</h1>

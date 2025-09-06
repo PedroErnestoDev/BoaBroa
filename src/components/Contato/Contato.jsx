@@ -3,7 +3,7 @@ import Phone from "../../assets/94915 1.png";
 import Whats from "../../assets/4423697 1.png";
 import Insta from "../../assets/15713420 1.png";
 
-export default function Contato() {
+export default function Contato({id}) {
   const phoneNumber = "5519986125489"; // formato internacional sem espaço/traço
 
   function handleClick() {
@@ -16,7 +16,7 @@ export default function Contato() {
 
   return (
     <>
-      <h1 className="tituloContato">Contato</h1>
+      <h1 className="tituloContato" id={id}>Contato</h1>
       <div className="containerContato">
         <div className="cardsContato">
           <img src={Phone} alt="" />

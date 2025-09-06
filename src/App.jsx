@@ -9,11 +9,11 @@ import Sobre from './components/Sobre/Sobre'
 function App() {
   return (
     <>
-      <Navbar/>
-      <Sobre/>
-      <Catalogo/>
-      <Contato/>
-      <Broas />
+      <Navbar />
+      <Sobre id="sobre"/>
+      <Catalogo id="catalogo"/>
+      <Contato id="contato"/>
+      <Broas/>
       <Footer/>
     </>
   )

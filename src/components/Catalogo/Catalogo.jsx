@@ -15,7 +15,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-export default function Catalogo() {
+export default function Catalogo({id}) {
   useGSAP(() => {
     gsap.fromTo(
       ".cardItem", // classe que vamos dar para cada card
@@ -35,7 +35,7 @@ export default function Catalogo() {
 
   return (
     <>
-      <h1 className="tituloCatalogo">Catálogo</h1>
+      <h1 className="tituloCatalogo" id={id}>Catálogo</h1>
       <div className="conatinerCatalogo">
         <Cards img={broa1} titulo="Tradicional" className="cardItem" />
         <Cards img={broa2} titulo="Nutela" className="cardItem" />

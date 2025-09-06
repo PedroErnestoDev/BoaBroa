@@ -1,33 +1,33 @@
 .btnWhats
-    height: 88px
-    width: 474px
-    border-radius: 20px
-    border: none
-    background-color: #D18B47
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white
-    font-family: Afacad, Arial, Helvetica, sans-serif
-    font-size: 48px
-    display: flex
-    justify-content: center
-    align-items: center
-    transition: all 0.3s ease
-    font-weight: bold
+  height: 88px
+  width: 474px
+  border-radius: 20px
+  border: none
+  background-color: #D18B47
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  color: white
+  font-family: Afacad, Arial, Helvetica, sans-serif
+  font-size: 48px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: all 0.3s ease
+  font-weight: bold
 
-    &:hover
-        scale: 1.01
-        background-color: #A05B18
+  &:hover
+    scale: 1.01
+    background-color: #A05B18
 
 .containerSobre
-    display: flex
-    align-items: center
-    justify-content: center
-    column-gap: 70px
-    width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  column-gap: 70px
+  width: 100%
 
-    img
-        width: 737px
-        height: 737px
+  img
+    width: 737px
+    height: 737px
 
 .containerWords
   display: flex
@@ -47,15 +47,127 @@
     width: 474px
 
 .broaEsquerda
-    position: absolute
-    max-height: 419px
-    max-width: 339px
-    left: 0
-    top: 70%
+  position: absolute
+  max-height: 419px
+  max-width: 339px
+  left: 0
+  top: 70%
 
 .broaDireita
-    position: absolute
-    max-height: 419px
-    max-width: 316px
-    right: 0
-    top: 80%
+  position: absolute
+  max-height: 419px
+  max-width: 316px
+  right: 0
+  top: 80%
+
+
+@media screen and (max-width: 1201px)
+  .broaDireita
+    display: none
+
+  .broaEsquerda
+    display: none
+
+  .containerSobre
+    display: flex
+    align-items: center
+    justify-content: center
+    column-gap: 70px
+    width: 100%
+    flex-direction: column
+
+    img
+      width: 500px
+      height: 500px
+
+  .containerWords
+    display: flex
+    flex-direction: column
+    row-gap: 20px
+    width: 100%
+    align-items: center
+
+    h1
+      font-size: 114px
+      color: #5A3A1E
+      font-family: Afacad, Arial, Helvetica, sans-serif
+      font-weight: bold
+
+    p
+      font-size: 24px
+      color: #884D19
+      font-family: Afacad, Arial, Helvetica, sans-serif
+      width: 474px
+
+@media screen and (max-width: 1281px)
+  .broaDireita
+    display: none
+
+  .broaEsquerda
+    display: none
+
+  .containerSobre
+    width: 100%
+    margin-top: 100px
+    
+    img
+      width: 737px
+      height: 737px
+
+    .containerWords
+      display: flex
+      flex-direction: column
+      row-gap: 20px
+
+      h1
+        font-size: 100px
+        color: #5A3A1E
+        font-family: Afacad, Arial, Helvetica, sans-serif
+        font-weight: bold
+
+      p
+        font-size: 24px
+        color: #884D19
+        font-family: Afacad, Arial, Helvetica, sans-serif
+        width: 400px
+
+@media screen and (max-width: 420px)
+  .broaDireita
+    display: none
+
+  .broaEsquerda
+    display: none
+
+  .containerSobre
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+
+  .containerSobre img
+      width: 400px
+      height: auto
+
+  .containerWords
+    display: flex
+    flex-direction: column
+    row-gap: 20px
+    align-items: center
+    text-align: center
+
+    h1
+      font-size: 24px
+      color: #5A3A1E
+      font-family: Afacad, Arial, Helvetica, sans-serif
+      font-weight: bold
+
+    p
+      font-size: 18px
+      color: #884D19
+      font-family: Afacad, Arial, Helvetica, sans-serif
+      width: 80%
+
+  .btnWhats
+    height: 50px
+    width: 300px
+    font-size: 24px

@@ -13,7 +13,7 @@
 
     &:hover
         scale: 1.01
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
 .card img
     width: 515px
@@ -37,3 +37,60 @@
 .descricao
     color: #9A4B00
     font-size: 20px
+
+
+@media screen and (max-width: 800px)
+    .card
+            height: 300px
+            width: 292px
+
+    .card img
+        width: 350px
+        max-width: none
+        display: block
+        position: relative // desloca a imagem para a esquerda, ultrapassando o card
+        margin-bottom: 16px // espaço entre imagem e texto
+        filter: drop-shadow(10px 10px 10px gray)
+
+        &:hover
+            scale: 1.01
+
+    .titulo
+        margin-top: -30px
+        color: #8C6A4A
+        font-size: 34px
+        width: 500px
+        display: flex
+        justify-content: center
+
+    .descricao
+        color: #9A4B00
+        font-size: 20px
+
+@media screen and (max-width: 420px)
+    .card
+            height: 300px
+            width: 292px
+
+    .card img
+        width: 350px
+        max-width: none
+        display: block
+        position: relative // desloca a imagem para a esquerda, ultrapassando o card
+        margin-bottom: 16px // espaço entre imagem e texto
+        filter: drop-shadow(10px 10px 10px gray)
+
+        &:hover
+            scale: 1.01
+
+    .titulo
+        margin-top: -50px
+        color: #8C6A4A
+        font-size: 24px
+        width: 500px
+        display: flex
+        justify-content: center
+
+    .descricao
+        color: #9A4B00
+        font-size: 20px
