@@ -46,8 +46,8 @@ export default function Sobre({id}) {
       <div className="containerSobre" id={id}>
         <img src={Logo} alt="Imagem logo boabroa" className="logoBoaBroa" />
         <div className="containerWords">
-          <h1>Sobre nós</h1>
-          <p ref={textRef}></p>
+          <h1 className="h1Sobre">Sobre nós</h1>
+          <p ref={textRef} className="pSobre"></p>
           <button onClick={handleClick} className="btnWhats">
             Peça já a sua!
           </button>
